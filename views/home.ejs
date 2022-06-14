@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home.css">
+<h1 id="heading">Upload CSV Files</h1>
+<div id="mainBox" class="flexhouse">
+     <form id="fileupload" action="/upload" method="post"  class="flexhouse" enctype="multipart/form-data">
+      <div class="flexHome"><input type="file" name="fileInp" required accept="text/csv" /><img src="/images/uploadicon1.jpg" alt="Upload-key"></div>
+      <div> <button id="submitbtn">Submit</button></div>
+     </form>
+   
+   <div id="fileBox" class="flexhouse">
+     <%let sum=1%>
+      <% for(fileCurr of fileList){%>
+        <div class="flexHome">
+          <div class="countInfo"><%=sum%></div>
+          <di class="info"><%=fileCurr.fileLocation.split('-')[1] %></di>
+          <di ><a href="/del/<%=fileCurr.id%>"><i class="fas fa-solid fa-trash"></i></a></di>
+          <di class="pop"><a href="/view/<%=fileCurr.id%>">View</a></di>
+        </div>
+        <%sum+=1%>  
+      <%}%> 
+   </div>
+</div>
+

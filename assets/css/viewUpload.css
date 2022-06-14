@@ -1,0 +1,44 @@
+#content{
+     background-color: antiquewhite 
+}
+#searchBar{
+     margin: 10px auto;
+     height:50px;  
+     width:280px;
+     box-sizing: border-box;
+     padding:2px;
+}
+input{
+     display:block;
+     width:100%;
+     height:100%;
+     box-sizing: border-box;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: large;
+}
+.info{
+     max-width:20px;
+}
+
+table{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 300;
+}
+thead{
+  min-width:50px; 
+  padding:5px;
+  color:rgb(248, 8, 8);
+}
+
+.noResult{
+     display:none;
+     width:400px;
+     margin:auto;
+}
+
+.colHead{
+     justify-content: space-around;
+}
+.sortButtonDiv{
+     width:40px;
+}

@@ -1,0 +1,58 @@
+#mainBox{
+  min-height:100px;
+  /* width:200px; */
+}
+#heading{
+  color:white;
+}
+#submitbtn{
+  padding: 10px;
+  background-color: aquamarine;
+  color: rgb(0, 8, 15);
+}
+#submitbtn:hover{
+ background-color: aqua;
+  transition-delay: 0.1s;
+}
+#fileupload{
+  height: 100px;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid grey;
+  border-radius: 10%;
+  background-color: antiquewhite;
+  /* margin-top: -100px; */
+}
+#fileBox  > div{
+  height:40px;
+
+}
+#fileBox .flexHome{
+  justify-content: space-around;
+  align-items: center;
+  font-size:1.2rem;
+  font-weight: 400;
+  border: 5px solid greenyellow;
+  background-color: rgb(208, 177, 237);
+  margin-top:7px
+}
+
+#fileBox .flexHome > div{
+  width: 30px;
+}
+
+.pop{
+  border:4px solid greenyellow;
+  background-color: rgb(57, 110, 140);
+  width:45px;
+}
+
+.pop a{
+  color:white;
+  text-decoration: none;
+}
+
+.countInfo{
+  max-width:10px;
+}

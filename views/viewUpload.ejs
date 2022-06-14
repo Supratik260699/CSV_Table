@@ -1,0 +1,47 @@
+
+<link rel="stylesheet" href="/css/viewUpload.css">
+<div class="flexVerti">
+  <div id="searchBar"><input type="text" name="search" id="inpBar"  placeholder="Search..." required></div>
+  
+  <div>
+    <table id="record" border="2">
+      <thead>
+        <tr>
+          <%let ans=1%>
+          <%for(fields in basicRecord){%>
+              <th>
+                <div class="flexHome colHead">
+                  <div> <%=fields%></div>
+                  <div class="sortButtonDiv">
+                    <button onclick="sort('desc','<%=ans%>')"><i class="fas fa-arrow-up "></i></button>
+                    
+                    <button onclick="sort('asc','<%=ans%>')"> <i class="fas fa-arrow-down "></i></button>
+                     
+                 </div>
+                </div>
+              </th>
+            <% ans++ %>
+          <%}%>
+          
+        </tr>
+      </thead>
+      <tbody id="mainData">
+        <%for(rec of allRecords){%>
+          <tr>
+          <%for(fields in rec){%>
+              <td data-val="<%=rec[fields].split(' ')[0]%>"><%=rec[fields]%></td>
+          <%}%>
+          
+          </tr>
+        <%}%>
+      </tbody>
+     
+  </table>
+  <div class="noResult">
+    <h2>Sorry No results Try again!!!!</h2>
+  </div>
+  </div>
+  </div>
+</div>
+<script src="/js/searchFile.js"></script>
+
